@@ -10482,7 +10482,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 .footer {
   text-align: center;
   font-size: 0.9rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Comfortaa",cursive, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
 
 
@@ -10506,3 +10506,44 @@ section#contact form#contactForm :-ms-input-placeholder {
 .portfolio-item{
 	background-color: white
 }
+
+.portfolio-caption-subheading{
+	font-size: 1em !important;
+	font-family: "Comfortaa",cursive, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+input{
+	font-family: "Comfortaa",cursive, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: #a982c8 !important;
+  box-shadow: 0 0 8px #a982c8 !important;
+  outline: 0 none !important;
+}
+
+.portfolio-item:hover{
+	cursor:pointer
+}
+
+@media screen and (max-width: 550px) {
+  .portfolio-item{
+	box-shadow: 0px 0px 2px #e5d9ee!important;
+}
+}
+
