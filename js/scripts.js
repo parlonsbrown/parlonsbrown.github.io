@@ -53,6 +53,18 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+	
+	//masonry
+	$( document ).ready(function() {
+		var container = document.querySelector('#masonry-grid');
+		var msnry = new Masonry( container, {
+		  // options
+		  percentPosition: true
+		  
+		});
+	});
+	
+	
 })(jQuery); // End of use strict
 
 //search
@@ -81,3 +93,6 @@ $('#textModal').on('show.bs.modal', function (event) {
 	  modal.find('.modal-body').html(t)
   })
 })
+
+
+
