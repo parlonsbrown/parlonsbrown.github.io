@@ -10568,6 +10568,7 @@ input[type="color"]:focus,
 	height: 0.3 vh !important;
 	position: absolute;
 	outline: none; 
+	pointer-events: none
 }
 
 @media screen and (max-width: 550px) {
@@ -10584,6 +10585,7 @@ input[type="color"]:focus,
 		height: 100% !important;
 		position: absolute;
 		outline: none; 
+		pointer-events: none
 	}
    
 }
