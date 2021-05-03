@@ -10561,6 +10561,15 @@ input[type="color"]:focus,
 	padding:30px;
 }
 
+#canvas3d { 
+	width: 100% !important; 
+	top: 95 px ;
+	left: 0 px !important;
+	height: 0.3 vh !important;
+	position: absolute;
+	outline: none; 
+}
+
 @media screen and (max-width: 550px) {
   .portfolio-item{
 	box-shadow: 0px 0px 2px #e5d9ee!important;
@@ -10568,7 +10577,19 @@ input[type="color"]:focus,
    .modal-body{
 	   padding: 1em !important;
    }
+   
+   #canvas3d { 
+		width: 100% !important; 
+		top: 50px ;
+		height: 100% !important;
+		position: absolute;
+		outline: none; 
+	}
+   
 }
+
+
+
 
 .modal-content{
 	
