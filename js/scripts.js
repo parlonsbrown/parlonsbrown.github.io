@@ -88,11 +88,30 @@ $('#rechercher').on("keyup", function () {
 //modal
 $('#textModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
+  console.log(button)
+  if(button[0]){
   var modal = $(this)
   $.get('text/'+button[0].dataset.post+'.html',function(t){
 	  modal.find('.modal-body').html(t)
+	  window.location.hash = button[0].dataset.post
   })
+  }
 })
+
+$('#textModal').on('hidden.bs.modal', function (event) {
+    window.location.hash = 'home'
+})
+
+if(window.location.hash && window.location.hash !== '#home') {
+  var n = window.location.hash.substring(1);
+  console.log(n)
+  $('#textModal').modal('show');
+  $.get('text/'+n+'.html',function(t){
+	  $('#textModal').find('.modal-body').html(t)
+  })
+} else {
+  // Fragment doesn't exist
+}
 
 
 
